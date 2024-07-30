@@ -1,31 +1,6 @@
 #include <stdio.h>
 int main()
 {
-FILE *p1,*p2;
-p1=fopen("data.txt","w");
-
-if(p1==NULL) {
-printf("ERROR");
-return 1;}
-char c;
-int e;
-while((c=getchar())!=EOF){
-    fputc(c,p1);
-}
-fclose(p1);
-
-p1=fopen("data.txt","r");
-p2=fopen("data2.txt","w");
-if(p1==NULL|| p2==NULL) {
-printf("ERROR");
-return 1;}
-rewind(p1);
-while((c=fgetc(p1))!= EOF){
-if(c != ' ') 
-{fputc(c,p2);} 
-}
-fclose(p1);
-fclose(p2);
-printf("successfully copied");
+printf("hello world");
 return 0;
 }
